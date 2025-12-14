@@ -1,1 +1,179 @@
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 { color: #003366; /* Azul Cambridge */ }
+
+/* Botones */
+.btn-nav {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-main {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-main:hover { background-color: #e65c00; }
+.btn-white {
+    background-color: white;
+    color: #003366;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #003366 0%, #00509e 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 { color: white; font-size: 3rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; margin-bottom: 30px; }
+
+/* Secciones */
+.section-gray { background-color: #f4f4f4; padding: 60px 0; }
+.section-blue { background-color: #003366; color: white; padding: 60px 0; }
+.section-price { padding: 60px 0; text-align: center; }
+
+h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
+.section-blue h2 { color: white; }
+
+/* Grid Cards (Niveles) */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.level-badge {
+    background-color: #003366;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 15px;
+}
+
+.card button {
+    background: transparent;
+    border: 2px solid #003366;
+    color: #003366;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Speaking Section */
+.split-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.text-content { flex: 1; }
+.image-content { flex: 1; }
+
+.chat-sim {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.msg-ai { background: rgba(255,255,255,0.2); padding: 10px; border-radius: 10px; margin-bottom: 10px; width: fit-content;}
+.msg-user { background: #ff6600; color: white; padding: 10px; border-radius: 10px; margin-bottom: 10px; margin-left: auto; width: fit-content;}
+.mic-icon { font-size: 2rem; text-align: center; margin-top: 20px; }
+
+/* Precio */
+.price-card {
+    background: white;
+    border: 2px solid #ff6600;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.price { font-size: 3rem; color: #ff6600; font-weight: bold; margin: 20px 0; }
+.month { font-size: 1rem; color: #666; font-weight: normal; }
+.price-card ul { list-style: none; padding: 0; text-align: left; margin-bottom: 30px; }
+.price-card li { margin-bottom: 10px; font-size: 1.1rem; }
+.full-width { width: 100%; }
+
+/* Footer */
+footer { background: #333; color: white; text-align: center; padding: 20px 0; margin-top: 50px; }
