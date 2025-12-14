@@ -29,7 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
             resultadoDiv.style.color = 'red';
         }
     }
+// Codi per revisar l'Exercici A2 quan es fa clic al botó
+    const botonRevisar = document.getElementById('btn-revisar-a2');
 
+    if (botonRevisar) {
+        botonRevisar.addEventListener('click', () => {
+            // Cridem la funció principal:
+            // 1. ID de l'element d'entrada (el <select> en HTML, que és 'q1-a2')
+            // 2. La resposta correcta
+            revisarEjercicio('q1-a2', 'clothes');
+        });
+    }
     // EXEMPLE D'IMPLEMENTACIÓ:
 
     // Simulem la funció de revisió per un exercici amb ID 'verb-exercise'
