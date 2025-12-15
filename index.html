@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepCambridge AI - Tu Academia de Inglés</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">🇬🇧 PrepCambridge AI</div>
+            <nav>
+                <a href="#niveles">Niveles</a>
+                <a href="#speaking">Speaking AI</a>
+                <a href="#precio" class="btn-nav">Suscribirse</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Domina el Inglés y Aprueba tu Examen</h1>
+            <p>Preparación completa para exámenes Cambridge y práctica de conversación con Inteligencia Artificial.</p>
+            <a href="#precio" class="btn-main">Empezar por 10€/mes</a>
+        </div>
+    </section>
+
+    <section id="niveles" class="section-gray">
+        <div class="container">
+            <h2>Niveles Cambridge</h2>
+            <div class="ejercicio-container">
+    <h3>Prova Ràpida A2 (Vocabulary)</h3>
+    <p>Pregunta 1: Tria la millor paraula per completar la frase.</p>
+    
+    <div class="question">
+        <label for="q1-a2">
+            **I need to buy some new ______ to wear to the wedding.**
+        </label>
+        
+        <select id="q1-a2">
+            <option value="">-- Selecciona una opció --</option>
+            <option value="clothes">clothes</option>
+            <option value="cloth">cloth</option>
+            <option value="clothing">clothing</option>
+        </select>
+    </div>
+    
+    <button id="btn-revisar-a2" class="btn-main small-btn">Revisar Resposta</button>
+    
+    <div id="resultado-q1-a2" class="feedback"></div>
+</div>
+
+<style>
+/* Afegeix aquests estils bàsics dins del teu styles.css per donar format al quadre de l'exercici */
+.ejercicio-container {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-top: 30px;
+    border-left: 5px solid #ff6600;
+}
+.ejercicio-container h3 { color: #ff6600; margin-top: 0; }
+.question { margin: 15px 0; font-size: 1.1rem; }
+.feedback { margin-top: 15px; font-weight: bold; }
+.small-btn { padding: 10px 20px; font-size: 1rem; }
+</style>
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="level-badge">A2</div>
+                    <h3>Key (KET)</h3>
+                    <p>Nivel elemental/fundamental. Ideal para empezar a comunicarte en situaciones sencillas.</p>
+                    <button>Ver Ejercicios</button>
+                </div>
+                <div class="card">
+                    <div class="level-badge">B1</div>
+                    <h3>Preliminary (PET)</h3>
+                    <p>Nivel intermedio. Domina el inglés para el uso cotidiano y viajes.</p>
+                    <button>Ver Ejercicios</button>
+                </div>
+                <div class="card">
+                    <div class="level-badge">B2</div>
+                    <h3>First (FCE)</h3>
+                    <p>Nivel intermedio alto. El certificado más popular para trabajar y estudiar.</p>
+                    <button>Ver Ejercicios</button>
+                </div>
+                <div class="card">
+                    <div class="level-badge">C1</div>
+                    <h3>Advanced (CAE)</h3>
+                    <p>Nivel avanzado. Demuestra un alto rendimiento para entornos profesionales.</p>
+                    <button>Ver Ejercicios</button>
+                </div>
+                <div class="card">
+                    <div class="level-badge">C2</div>
+                    <h3>Proficiency (CPE)</h3>
+                    <p>Nivel de dominio. La titulación más avanzada, nivel cercano al nativo.</p>
+                    <button>Ver Ejercicios</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speaking" class="section-blue">
+        <div class="container split-layout">
+            <div class="text-content">
+                <h2>🗣️ Speaking AI Coach</h2>
+                <p>No necesitas un profesor particular para practicar. Nuestra IA está disponible 24/7 para:</p>
+                <ul>
+                    <li>Simular exámenes orales de Cambridge.</li>
+                    <li>Corregir tu pronunciación al instante.</li>
+                    <li>Conversar sobre cualquier tema.</li>
+                </ul>
+                <button class="btn-white">Probar Demo Speaking</button>
+            </div>
+            <div class="image-content">
+                <div class="chat-sim">
+                    <div class="msg-ai">Hello! Are you ready for your B2 speaking test?</div>
+                    <div class="msg-user">Yes, I am ready.</div>
+                    <div class="msg-ai">Great. Let's talk about your hobbies...</div>
+                    <div class="mic-icon">🎤</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precio" class="section-price">
+        <div class="container">
+            <h2>Suscripción Única</h2>
+            <div class="price-card">
+                <h3>Acceso Total</h3>
+                <div class="price">10€<span class="month">/mes</span></div>
+                <ul>
+                    <li>✅ Acceso a todos los niveles (A2 - C2)</li>
+                    <li>✅ Ejercicios tipo examen ilimitados</li>
+                    <li>✅ Speaking con IA ilimitado</li>
+                    <li>✅ Correcciones gramaticales</li>
+                </ul>
+                <button class="btn-main full-width" onclick="alert('Aquí iría la pasarela de pago (Stripe/PayPal)')">Suscribirme Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PrepCambridge AI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
