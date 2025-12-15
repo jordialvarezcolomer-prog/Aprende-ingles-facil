@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrepCambridge AI - Tu Academia de Inglés</title>
+    <title>PrepCambridge AI - Aprende Inglés Fácil</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos extra para el contenido nuevo del Markdown */
+        .section-white { background: #fff; padding: 60px 0; }
+        .info-list { list-style: none; padding: 0; }
+        .info-list li { margin-bottom: 10px; font-size: 1.1rem; }
+        
+        /* Estilos para la tabla de niveles */
+        .table-container { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f8f9fa; color: #333; }
+        tr:hover { background-color: #f5f5f5; }
+
+        /* Estilos para el bloque de código (estructura) */
+        .code-block { background: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; font-family: monospace; overflow-x: auto; margin: 20px 0; }
+        
+        /* Estilos del ejercicio (los que ya tenías) */
+        .ejercicio-container {
+            background: white; padding: 25px; border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-top: 30px; margin-bottom: 30px;
+            border-left: 5px solid #ff6600;
+        }
+        .ejercicio-container h3 { color: #ff6600; margin-top: 0; }
+        .question { margin: 15px 0; font-size: 1.1rem; }
+        .feedback { margin-top: 15px; font-weight: bold; }
+        .small-btn { padding: 10px 20px; font-size: 1rem; }
+    </style>
 </head>
 <body>
 
@@ -13,6 +40,7 @@
         <div class="container header-content">
             <div class="logo">🇬🇧 PrepCambridge AI</div>
             <nav>
+                <a href="#caracteristicas">Info</a>
                 <a href="#niveles">Niveles</a>
                 <a href="#speaking">Speaking AI</a>
                 <a href="#precio" class="btn-nav">Suscribirse</a>
@@ -22,83 +50,144 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Domina el Inglés y Aprueba tu Examen</h1>
-            <p>Preparación completa para exámenes Cambridge y práctica de conversación con Inteligencia Artificial.</p>
+            <h1>Aprende Inglés Fácil y Aprueba tu Examen</h1>
+            <p>Plataforma interactiva y completa para la preparación de exámenes de inglés (tipo Cambridge) con ejercicios estructurados, asistente IA y práctica progresiva.</p>
             <a href="#precio" class="btn-main">Empezar por 10€/mes</a>
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="section-white">
+        <div class="container">
+            <h2>📚 Características del Curso</h2>
+            <ul class="info-list">
+                <li>✅ <strong>6 Niveles Completos</strong>: A1, A2, B1, B2, C1, C2</li>
+                <li>📝 <strong>Ejercicios en 4 Apartados</strong>: Gramática, Vocabulario, Listening, Reading</li>
+                <li>🎯 <strong>Contenido Progresivo</strong>: Desde principiante hasta maestría</li>
+                <li>💡 <strong>Ejercicios Prácticos</strong>: Basados en situaciones reales</li>
+                <li>🤖 <strong>Asistente IA para Speaking</strong> (próximamente)</li>
+                <li>📊 <strong>Respuestas Incluidas</strong>: Autoevaluación instantánea</li>
+            </ul>
+
+            <h3>🎯 Apartados en Cada Nivel</h3>
+            <ol>
+                <li><strong>Gramática 📝:</strong> Estructuras gramaticales, tiempos verbales, reglas</li>
+                <li><strong>Vocabulario 📖:</strong> Léxico, expresiones, colocaciones idiomáticas</li>
+                <li><strong>Listening 🎧:</strong> Comprensión auditiva con diálogos y conversaciones</li>
+                <li><strong>Reading 📄:</strong> Comprensión lectora con textos variados</li>
+            </ol>
         </div>
     </section>
 
     <section id="niveles" class="section-gray">
         <div class="container">
-            <h2>Niveles Cambridge</h2>
-            <div class="ejercicio-container">
-    <h3>Prova Ràpida A2 (Vocabulary)</h3>
-    <p>Pregunta 1: Tria la millor paraula per completar la frase.</p>
-    
-    <div class="question">
-        <label for="q1-a2">
-            **I need to buy some new ______ to wear to the wedding.**
-        </label>
-        
-        <select id="q1-a2">
-            <option value="">-- Selecciona una opció --</option>
-            <option value="clothes">clothes</option>
-            <option value="cloth">cloth</option>
-            <option value="clothing">clothing</option>
-        </select>
-    </div>
-    
-    <button id="btn-revisar-a2" class="btn-main small-btn">Revisar Resposta</button>
-    
-    <div id="resultado-q1-a2" class="feedback"></div>
-</div>
+            <h2>🎓 Niveles y Contenidos</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Descripción</th>
+                            <th>Usuarios Objetivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>A1</strong></td>
+                            <td>Principiante - Elementos básicos</td>
+                            <td>Principiantes absolutos</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A2</strong></td>
+                            <td>Elemental - Interacción simple</td>
+                            <td>Usuarios en desarrollo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>B1</strong></td>
+                            <td>Intermedio - Independencia</td>
+                            <td>Usuarios con experiencia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>B2</strong></td>
+                            <td>Intermedio-Alto - Avanzado</td>
+                            <td>Usuarios muy competentes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>C1</strong></td>
+                            <td>Avanzado - Profesional</td>
+                            <td>Usuarios con dominio</td>
+                        </tr>
+                        <tr>
+                            <td><strong>C2</strong></td>
+                            <td>Maestría - Completo dominio</td>
+                            <td>Usuarios expertos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-<style>
-/* Afegeix aquests estils bàsics dins del teu styles.css per donar format al quadre de l'exercici */
-.ejercicio-container {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    margin-top: 30px;
-    border-left: 5px solid #ff6600;
-}
-.ejercicio-container h3 { color: #ff6600; margin-top: 0; }
-.question { margin: 15px 0; font-size: 1.1rem; }
-.feedback { margin-top: 15px; font-weight: bold; }
-.small-btn { padding: 10px 20px; font-size: 1rem; }
-</style>
+            <div class="ejercicio-container">
+                <h3>Prova Ràpida A2 (Vocabulary)</h3>
+                <p>Pregunta 1: Tria la millor paraula per completar la frase.</p>
+                <div class="question">
+                    <label for="q1-a2">
+                        <strong>I need to buy some new ______ to wear to the wedding.</strong>
+                    </label>
+                    <select id="q1-a2">
+                        <option value="">-- Selecciona una opció --</option>
+                        <option value="clothes">clothes</option>
+                        <option value="cloth">cloth</option>
+                        <option value="clothing">clothing</option>
+                    </select>
+                </div>
+                <button id="btn-revisar-a2" class="btn-main small-btn">Revisar Resposta</button>
+                <div id="resultado-q1-a2" class="feedback"></div>
+            </div>
+
             <div class="grid-cards">
                 <div class="card">
-                    <div class="level-badge">A2</div>
-                    <h3>Key (KET)</h3>
-                    <p>Nivel elemental/fundamental. Ideal para empezar a comunicarte en situaciones sencillas.</p>
+                    <div class="level-badge">A1-A2</div>
+                    <h3>Básico (KET)</h3>
+                    <p>Vocabulario básico, tiempos simples, situaciones cotidianas.</p>
                     <button>Ver Ejercicios</button>
                 </div>
                 <div class="card">
-                    <div class="level-badge">B1</div>
-                    <h3>Preliminary (PET)</h3>
-                    <p>Nivel intermedio. Domina el inglés para el uso cotidiano y viajes.</p>
+                    <div class="level-badge">B1-B2</div>
+                    <h3>Intermedio (PET/FCE)</h3>
+                    <p>Tiempos complejos, vocabulario académico, textos auténticos.</p>
                     <button>Ver Ejercicios</button>
                 </div>
                 <div class="card">
-                    <div class="level-badge">B2</div>
-                    <h3>First (FCE)</h3>
-                    <p>Nivel intermedio alto. El certificado más popular para trabajar y estudiar.</p>
+                    <div class="level-badge">C1-C2</div>
+                    <h3>Avanzado (CAE/CPE)</h3>
+                    <p>Estructuras gramaticales complejas, vocabulario especializado.</p>
                     <button>Ver Ejercicios</button>
                 </div>
-                <div class="card">
-                    <div class="level-badge">C1</div>
-                    <h3>Advanced (CAE)</h3>
-                    <p>Nivel avanzado. Demuestra un alto rendimiento para entornos profesionales.</p>
-                    <button>Ver Ejercicios</button>
-                </div>
-                <div class="card">
-                    <div class="level-badge">C2</div>
-                    <h3>Proficiency (CPE)</h3>
-                    <p>Nivel de dominio. La titulación más avanzada, nivel cercano al nativo.</p>
-                    <button>Ver Ejercicios</button>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-white">
+        <div class="container">
+            <h2>💡 Cómo Usar la Plataforma</h2>
+            <p>Sigue estos pasos para aprovechar al máximo el curso:</p>
+            <ul>
+                <li><strong>1. Selecciona tu nivel</strong> basado en tu proficiencia.</li>
+                <li><strong>2. Elige un apartado</strong> (Gramática, Vocabulario, etc.).</li>
+                <li><strong>3. Realiza los ejercicios</strong> siguiendo las instrucciones.</li>
+                <li><strong>4. Revisa las respuestas</strong> incluidas (Autoevaluación).</li>
+            </ul>
+
+            <h3>📂 Estructura del Proyecto</h3>
+            <div class="code-block">
+Aprende-ingles-facil/
+├── levels/
+│   ├── A1/                # Nivel Principiante
+│   │   ├── grammar.md
+│   │   ├── vocabulary.md
+│   │   └── ...
+│   ├── B1/                # Nivel Intermedio
+│   └── C1/                # Nivel Avanzado
             </div>
         </div>
     </section>
@@ -143,11 +232,22 @@
         </div>
     </section>
 
+    <section class="section-gray" style="text-align: center;">
+        <div class="container">
+            <h2>📅 Cronología del Proyecto</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li>📍 <strong>Diciembre 2025:</strong> Versión inicial con 6 niveles completos</li>
+                <li>🔜 <strong>Próximamente:</strong> Asistente IA para práctica de speaking</li>
+                <li>🔜 <strong>Próximamente:</strong> Audios para ejercicios de listening</li>
+            </ul>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
-            <p>&copy; 2024 PrepCambridge AI. Todos los derechos reservados.</p>
+            <p>&copy; 2025 PrepCambridge AI (Aprende Inglés Fácil). Todos los derechos reservados.</p>
         </div>
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
