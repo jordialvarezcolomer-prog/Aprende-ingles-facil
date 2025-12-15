@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Nivel Básico (A1-A2)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .back-btn { background: #6c757d; text-decoration: none; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block; margin-bottom: 20px; }
+        .exercise-box { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; border-left: 5px solid #007bff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .result { font-weight: bold; margin-top: 10px; display: none; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+    </style>
+</head>
+<body>
+
+    <div class="container" style="margin-top: 40px;">
+        <a href="index.html" class="back-btn">← Volver al Inicio</a>
+        <h1>Ejercicios Nivel Básico (A1-A2)</h1>
+        <p>Completa los siguientes ejercicios para practicar tu gramática y vocabulario.</p>
+
+        <div class="exercise-box">
+            <h3>1. Verb "To Be" (Gramática)</h3>
+            <p>Selecciona la forma correcta: <em>"She ______ my best friend."</em></p>
+            <select id="q1">
+                <option value="">Elige...</option>
+                <option value="are">are</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+            </select>
+            <button class="btn-main small-btn" onclick="checkAnswer('q1', 'is', 'res1')">Corregir</button>
+            <p id="res1" class="result"></p>
+        </div>
+
+        <div class="exercise-box">
+            <h3>2. Present Simple (Gramática)</h3>
+            <p>Escribe el verbo correctamente: <em>"He usually ______ (play) football on Sundays."</em></p>
+            <input type="text" id="q2" placeholder="Escribe tu respuesta">
+            <button class="btn-main small-btn" onclick="checkAnswer('q2', 'plays', 'res2')">Corregir</button>
+            <p id="res2" class="result"></p>
+        </div>
+
+        <div class="exercise-box">
+            <h3>3. Vocabulary: Colors</h3>
+            <p>¿Cómo se dice "Rojo" en inglés?</p>
+            <select id="q3">
+                <option value="">Elige...</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <button class="btn-main small-btn" onclick="checkAnswer('q3', 'red', 'res3')">Corregir</button>
+            <p id="res3" class="result"></p>
+        </div>
+
+    </div>
+
+    <script>
+        function checkAnswer(inputId, correctAnswer, resultId) {
+            let userAnswer = document.getElementById(inputId).value.toLowerCase().trim();
+            let resultText = document.getElementById(resultId);
+            
+            resultText.style.display = "block";
+            
+            if (userAnswer === correctAnswer) {
+                resultText.innerHTML = "✅ ¡Correcto! Very good job.";
+                resultText.className = "result correct";
+            } else {
+                resultText.innerHTML = "❌ Incorrecto. La respuesta correcta es: " + correctAnswer;
+                resultText.className = "result incorrect";
+            }
+        }
+    </script>
+</body>
+</html>
